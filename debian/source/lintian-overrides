@@ -1,0 +1,7 @@
+# Test data
+source-is-missing kleur/bench/colors.js
+source-is-missing kleur/bench/dryrun.js
+source-contains-prebuilt-javascript-object kleur/bench/colors.js
+source-contains-prebuilt-javascript-object kleur/bench/dryrun.js
+very-long-line-length-in-source-file kleur/bench/colors.js line 61 is 1162 characters long (>512)
+very-long-line-length-in-source-file kleur/bench/dryrun.js line 23 is 1318 characters long (>512)

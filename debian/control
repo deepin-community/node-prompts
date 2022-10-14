@@ -1,0 +1,28 @@
+Source: node-prompts
+Section: javascript
+Priority: optional
+Maintainer: Debian Javascript Maintainers <pkg-javascript-devel@lists.alioth.debian.org>
+Uploaders: Yadd <yadd@debian.org>
+Testsuite: autopkgtest-pkg-nodejs
+Build-Depends: debhelper-compat (= 13)
+ , dh-sequence-nodejs
+ , node-babel7
+ , node-tape <!nocheck>
+Standards-Version: 4.6.0
+Homepage: https://github.com/terkelg/prompts#readme
+Vcs-Git: https://salsa.debian.org/js-team/node-prompts.git
+Vcs-Browser: https://salsa.debian.org/js-team/node-prompts
+Rules-Requires-Root: no
+
+Package: node-prompts
+Architecture: all
+Depends: ${misc:Depends}
+Provides: ${nodejs:Provides}
+Description: Nodejs lightweight, beautiful and user-friendly interactive prompts
+ prompts permits one to easy use cli prompts to enquire users for information:
+  * User friendly: prompt uses layout and colors to create beautiful cli
+                   interfaces.
+  * Promised: uses promises and `async`/`await`. No callback hell.
+  * Flexible: all prompts are independent and can be used on their own.
+  * Testable: provides a way to submit answers programmatically.
+  * Unified: consistent experience across all [prompts](#-types).

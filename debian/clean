@@ -1,0 +1,4 @@
+dist/
+kleur/colors.js
+kleur/index.js
+node_modules/
