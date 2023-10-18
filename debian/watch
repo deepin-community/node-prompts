@@ -2,7 +2,7 @@ version=4
 opts=\
 dversionmangle=auto,\
 filenamemangle=s/.*?(\d[\d\.-]*@ARCHIVE_EXT@)/node-prompts-$1/ \
- https://github.com/terkelg/prompts/releases .*/archive/.*/v?([\d\.]+).tar.gz group
+ https://github.com/terkelg/prompts/tags .*/archive/.*/v?([\d\.]+).tar.gz group
 
 opts=\
 ctype=nodejs,\
